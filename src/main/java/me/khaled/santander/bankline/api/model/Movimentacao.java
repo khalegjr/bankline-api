@@ -19,6 +19,9 @@ public class Movimentacao {
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private Integer id;
 
+  @Column(name = "id_conta")
+  private Integer idConta;
+
   @Column(name = "data_hora")
   private LocalDateTime dataHora;
   private String descricao;
@@ -32,7 +35,15 @@ public class Movimentacao {
   }
 
   public void setId(Integer id) {
-    this.id = id;
+      this.id = id;
+  }
+  
+  public Integer getIdConta() {
+    return this.idConta;
+  }
+
+  public void setIdConta(Integer idConta) {
+    this.idConta = idConta;
   }
 
   public LocalDateTime getDataHora() {
