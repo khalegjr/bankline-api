@@ -37,7 +37,7 @@ public class Correntista {
         return this.cpf;
     }
 
-    public void setId(String cpf) {
+    public void setCpf(String cpf) {
         this.cpf = cpf;
     }
 
@@ -53,7 +53,7 @@ public class Correntista {
         return this.conta;
     }
 
-    public void setId(Conta conta) {
+    public void setConta(Conta conta) {
         this.conta = conta;
     }
 }
